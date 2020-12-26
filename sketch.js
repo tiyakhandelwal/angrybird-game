@@ -4,6 +4,7 @@ const Bodies = Matter.Bodies;
 
 var engine, world;
 var box1, pig1;
+var platform;
 
 function setup(){
     var canvas = createCanvas(1200,400);
@@ -30,6 +31,8 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    platform= new Ground (150,305,300,170);
+
 }
 
 function draw(){
@@ -54,4 +57,6 @@ function draw(){
     log5.display();
 
     bird.display();
+
+    platform.display();
 }
